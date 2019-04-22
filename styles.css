@@ -1,0 +1,83 @@
+body {
+    font-family: "Indie Flower", cursive, sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    font-size: 120%;
+    color: #212121;
+    background: #dcedc8;
+    background: linear-gradient(145deg, #dcedc8, #1fb61f);
+    background-size: 400% 400%;
+    -webkit-animation: bolah-background 10s ease infinite;
+    -moz-animation: bolah-background 10s ease infinite;
+    -o-animation: bolah-background 10s ease infinite;
+    animation: bolah-background 10s ease infinite;
+}
+
+@-webkit-keyframes bolah-background {
+    0% {
+        background-position: 0% 9%;
+    }
+
+    50% {
+        background-position: 100% 92%;
+    }
+
+    100% {
+        background-position: 0% 9%;
+    }
+}
+
+@-moz-keyframes bolah-background {
+    0% {
+        background-position: 0% 9%;
+    }
+
+    50% {
+        background-position: 100% 92%;
+    }
+
+    100% {
+        background-position: 0% 9%;
+    }
+}
+
+@-o-keyframes bolah-background {
+    0% {
+        background-position: 0% 9%;
+    }
+
+    50% {
+        background-position: 100% 92%;
+    }
+
+    100% {
+        background-position: 0% 9%;
+    }
+}
+
+@keyframes bolah-background {
+    0% {
+        background-position: 0% 9%;
+    }
+
+    50% {
+        background-position: 100% 92%;
+    }
+
+    100% {
+        background-position: 0% 9%;
+    }
+}
+
+h1 {
+    font-size: 200%;
+}
+
+a {
+    color: #212121;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
