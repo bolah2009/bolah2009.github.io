@@ -1,0 +1,22 @@
+env:
+  global:
+language: node_js
+node_js:
+  - node
+notifications:
+  - false
+script:
+  - yarn format:check
+  - yarn lint:check
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: master
+  local_dir: './dist'
+  fqdn: 'https://bolabuari.com/'
+  project_name: 'Bola Buari Portfolio'
+  committer_from_gh: true
+  verbose: true
