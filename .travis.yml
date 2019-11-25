@@ -8,3 +8,17 @@ notifications:
 script:
   - yarn format:check
   - yarn lint:check
+  - yarn build
+deploy:
+  provider: pages
+  skip_cleanup: true
+  github_token: $GITHUB_TOKEN
+  keep_history: true
+  on:
+    branch: production
+  local_dir: './dist'
+  fqdn: 'https://bolabuari.com/'
+  target_branch: master
+  project_name: 'Bola Buari Portfolio'
+  committer_from_gh: true
+  verbose: true

@@ -31,9 +31,6 @@ module.exports = {
       clientsClaim: true,
       skipWaiting: true,
     }),
-    new CopyPlugin([
-      { from: './src/assets', to: './assets' },
-      { from: './src/root', to: '.' },
-    ]),
+    new CopyPlugin([{ from: './src/assets', to: '.' }]),
   ],
 };
