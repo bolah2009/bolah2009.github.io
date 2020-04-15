@@ -11,7 +11,6 @@ module.exports = {
   entry: {
     main: './src/index.js',
     styles: './src/css/styles.css',
-    display: './src/css/display.css',
   },
   output: {
     path: path.resolve(__dirname, 'dist'),

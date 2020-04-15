@@ -57,11 +57,26 @@
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="/android-icon-192x192.png"
+      href="./android-icon-192x192.png"
     />
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
-    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png" />
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="96x96"
+      href="./favicon-96x96.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./favicon-16x16.png"
+    />
     <link rel="manifest" href="/manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png" />
@@ -70,40 +85,32 @@
     <title>Bola Ahmed Buari</title>
   </head>
   <body>
-    <main class="main">
-      <h1>Hi, I'm Bola Ahmed Buari.</h1>
-      <p>
-        I am a Full Stack Web Developer.
-      </p>
-      <p>
-        I love cooking and travelling. I am a Barcelona FC fan, that makes me
-        also love watching football (Soccer)!
-      </p>
-      <p>
-        You can find me on:
-        <a
-          href="mailto:bola_ahmed2002@yahoo.com"
-          rel="noreferrer"
-          target="_blank"
-          >Email</a
-        >
-        <a href="https://github.com/bolah2009/" rel="noreferrer" target="_blank"
-          >GitHub</a
-        >
-        <a href="https://gitlab.com/bolah2009/" rel="noreferrer" target="_blank"
-          >GitLab</a
-        >
-        <a
-          href="https://www.linkedin.com/in/bolah2009/"
-          rel="noreferrer"
-          target="_blank"
-          >LinkedIn</a
-        >
-        <a href="https://twitter.com/bolah2009" rel="noreferrer" target="_blank"
-          >Twitter</a
-        >
-      </p>
-    </main>
+    <nav class="nav d-flex jc-sb ai-c wrap">
+      <a href="#home" class="brand-logo-btn" data-id="home">
+          <img class="brand-logo" src="./icons-512.png" alt="brand logo" />
+      </a>
+      <div class="button current-section d-none-md">home</div>
+      <button class="navbar-toggle d-none-md" type="button">
+        <span class="icon-bar d-block"></span>
+        <span class="icon-bar d-block"></span>
+        <span class="icon-bar d-block"></span>
+      </button>
+      <ul class="nav-list hide d-flex col row-md jc-sb">
+        <li class="nav-list-item">
+          <a class="nav-list-link d-block active-nav" data-id="home" href="#home">home</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link d-block" data-id="about" href="#about">about</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link d-block" data-id="projects" href="#projects">projects</a>
+        </li>
+        <li class="nav-list-item">
+          <a class="nav-list-link d-block" data-id="contact" href="#contact">contact</a>
+        </li>
+      </ul>
+      <button type="button" class="button d-none d-block-md">Resume</button>
+    </nav>
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script
       async

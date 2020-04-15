@@ -30,7 +30,7 @@
     "workbox-webpack-plugin": "^4.3.1"
   },
   "scripts": {
-    "dev": "webpack --mode development",
+    "dev": "webpack --mode development --watch",
     "build": "webpack --mode production",
     "start": "webpack-dev-server --mode development --open",
     "start:prod": "webpack-dev-server --mode production --open",
