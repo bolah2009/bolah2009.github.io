@@ -43,3 +43,51 @@ navList.addEventListener('click', ({ target }) => {
 });
 
 brandLogo.addEventListener('click', () => addActiveSection('home'));
+
+const sectionPositions = () => {
+  let data = [];
+  const get = () => data;
+
+  const update = () => {
+    let updatedData = [];
+    const ids = ['home', 'about', 'projects', 'contact'];
+
+    ids.forEach((id, index) => {
+      const currentSection = {};
+      const { scrollHeight } = document.body;
+      const { height } = document
+        .querySelector(`#${id}`)
+        .getBoundingClientRect();
+      currentSection.id = id;
+      currentSection.top = index === 0 ? 0 : updatedData[index - 1].bottom;
+      const currentSectionHeight = height + currentSection.top;
+      currentSection.bottom =
+        index === ids.length - 1 ? scrollHeight : currentSectionHeight;
+
+      updatedData = [...updatedData.concat(currentSection)];
+    });
+
+    data = [...updatedData];
+  };
+
+  update();
+
+  return { get, update };
+};
+
+const scrollPositions = sectionPositions();
+
+window.addEventListener('resize', () => scrollPositions.update());
+
+document.addEventListener('scroll', () => {
+  const currentScrollPosition = window.scrollY;
+
+  scrollPositions.get().some(({ top, bottom, id }) => {
+    const sectionIsInView =
+      currentScrollPosition >= top && currentScrollPosition < bottom;
+    if (sectionIsInView) {
+      addActiveSection(id);
+    }
+    return sectionIsInView;
+  });
+});
