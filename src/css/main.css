@@ -131,15 +131,24 @@
 }
 
 .project-card-desc {
-  padding: 4px;
-  background-color: rgb(105, 105, 105);
-  background-color: rgba(105, 105, 105, 0.7);
+  padding: 8px;
+  background-color: rgb(55, 55, 55);
+  background-color: rgba(20, 20, 20, 0.9);
 }
 
 .text {
   line-height: initial;
   text-align: initial;
   margin-bottom: 4px;
+  color: #fff;
+}
+
+.links a {
+  color: #9f9f9f;
+}
+
+.links a:hover {
+  color: #cfcfcf;
 }
 
 @keyframes animate {

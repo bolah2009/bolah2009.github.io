@@ -16,82 +16,62 @@
       property="og:description"
       content="A personal portfolio page of Bola Ahmed Buari"
     />
-    <meta property="og:image" content="/icons-512.png" />
+    <meta property="og:image" content="/icons-192.png" />
     <meta property="og:url" content="https://bolabuari.com" />
     <meta property="og:type" content="blog" />
-    <link
-      href="https://fonts.googleapis.com/css?family=Indie+Flower|Roboto"
-      rel="stylesheet"
-    />
     <meta name="msvalidate.01" content="B9F62266FAA30B05C1E8AA29AFD3BC59" />
-    <link
-      rel="apple-touch-icon"
-      sizes="57x57"
-      href="./images/apple-icon-57x57.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="60x60"
-      href="./images/apple-icon-60x60.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="72x72"
-      href="./images/apple-icon-72x72.png"
-    />
-    <link
-      rel="apple-touch-icon"
-      sizes="76x76"
-      href="./images/apple-icon-76x76.png"
-    />
+    <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png" />
+    <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png" />
+    <link rel="apple-touch-icon" sizes="72x72" href="./apple-icon-72x72.png" />
+    <link rel="apple-touch-icon" sizes="76x76" href="./apple-icon-76x76.png" />
     <link
       rel="apple-touch-icon"
       sizes="114x114"
-      href="./images/apple-icon-114x114.png"
+      href="./apple-icon-114x114.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="120x120"
-      href="./images/apple-icon-120x120.png"
+      href="./apple-icon-120x120.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="144x144"
-      href="./images/apple-icon-144x144.png"
+      href="./apple-icon-144x144.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="152x152"
-      href="./images/apple-icon-152x152.png"
+      href="./apple-icon-152x152.png"
     />
     <link
       rel="apple-touch-icon"
       sizes="180x180"
-      href="./images/apple-icon-180x180.png"
+      href="./apple-icon-180x180.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="192x192"
-      href="./images/android-icon-192x192.png"
+      href="./android-icon-192x192.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
-      href="./images/favicon-32x32.png"
+      href="./favicon-32x32.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="96x96"
-      href="./images/favicon-96x96.png"
+      href="./favicon-96x96.png"
     />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
-      href="./images/favicon-16x16.png"
+      href="./favicon-16x16.png"
     />
     <link rel="manifest" href="./manifest.json" />
     <meta name="msapplication-TileColor" content="#ffffff" />
@@ -103,10 +83,15 @@
   <body>
     <nav class="nav d-flex jc-sb ai-c wrap">
       <a href="#home" class="brand-logo-btn" data-id="home">
-        <img class="brand-logo" src="./images/icons-512.png" alt="brand logo" />
+        <img class="brand-logo" src="./images/icons-192.png" alt="brand logo" />
       </a>
       <div class="button current-section d-none-md">home</div>
-      <button class="navbar-toggle d-none-md" type="button">
+      <button
+        aria-label="Menu"
+        title="toggle menu"
+        class="navbar-toggle d-none-md"
+        type="button"
+      >
         <span class="icon-bar d-block"></span>
         <span class="icon-bar d-block"></span>
         <span class="icon-bar d-block"></span>
@@ -291,6 +276,7 @@
                 title="Acclaim (Badges)"
               >
                 <img
+                  loading="lazy"
                   alt="Acclaim"
                   src="./images/acclaim_badge.png"
                   class="acclaim"
@@ -306,12 +292,13 @@
           <figure class="project-card d-flex col">
             <h3 class="project-title">Facebook Clone App</h3>
             <img
+              loading="lazy"
               alt="Facebook Clone App"
               src="./images/facebook-clone.png"
               class="project-card-img"
             />
-            <div class="figcaption-wrapper d-flex col jc-fe">
-              <figcaption class="project-card-desc">
+            <figcaption class="figcaption-wrapper d-flex col jc-fe">
+              <div class="project-card-desc">
                 <p class="text">
                   A Facebook clone with core features of the platform – users,
                   profiles, “friending”, posts, comments, a news feed, and
@@ -324,8 +311,10 @@
                       href="https://github.com/bolah2009/facebook-clone"
                       rel="noreferrer"
                       target="_blank"
-                      >Source Code</a
-                    >
+                      class="d-flex jc-sa ai-c"
+                      ><span> Source Code </span>
+                      <span class="icon-font github"></span>
+                    </a>
                   </li>
                   <li>
                     <a
@@ -336,18 +325,19 @@
                     >
                   </li>
                 </ul>
-              </figcaption>
-            </div>
+              </div>
+            </figcaption>
           </figure>
           <figure class="project-card d-flex col">
             <h3 class="project-title">Tic-Tac-Toe Game</h3>
             <img
+              loading="lazy"
               alt="Tic-Tac-Toe Game"
               src="./images/js-ttt.png"
               class="project-card-img"
             />
-            <div class="figcaption-wrapper d-flex col jc-fe">
-              <figcaption class="project-card-desc">
+            <figcaption class="figcaption-wrapper d-flex col jc-fe">
+              <div class="project-card-desc">
                 <p class="text">
                   A tic-tac-toe game that uses the JavaScript Module Pattern and
                   Factory Function. Also, implement AI using the min-max
@@ -360,8 +350,10 @@
                       href="https://github.com/bolah2009/js-ttt"
                       rel="noreferrer"
                       target="_blank"
-                      >Source Code</a
-                    >
+                      class="d-flex jc-sa ai-c"
+                      ><span> Source Code </span>
+                      <span class="icon-font github"></span>
+                    </a>
                   </li>
                   <li>
                     <a
@@ -372,18 +364,19 @@
                     >
                   </li>
                 </ul>
-              </figcaption>
-            </div>
+              </div>
+            </figcaption>
           </figure>
           <figure class="project-card d-flex col">
             <h3 class="project-title">Restaurant Landing page</h3>
             <img
+              loading="lazy"
               alt="Restaurant Landing page"
               src="./images/restaurant-page.png"
               class="project-card-img"
             />
-            <div class="figcaption-wrapper d-flex col jc-fe">
-              <figcaption class="project-card-desc">
+            <figcaption class="figcaption-wrapper d-flex col jc-fe">
+              <div class="project-card-desc">
                 <p class="text">
                   A restaurant landing page dynamically rendered using
                   JavaScript DOM manipulation and document fragment.
@@ -394,8 +387,10 @@
                       href="https://github.com/bolah2009/restaurant_page"
                       rel="noreferrer"
                       target="_blank"
-                      >Source Code</a
-                    >
+                      class="d-flex jc-sa ai-c"
+                      ><span> Source Code </span>
+                      <span class="icon-font github"></span>
+                    </a>
                   </li>
                   <li>
                     <a
@@ -406,18 +401,19 @@
                     >
                   </li>
                 </ul>
-              </figcaption>
-            </div>
+              </div>
+            </figcaption>
           </figure>
           <figure class="project-card d-flex col">
             <h3 class="project-title">Weather Forecast App</h3>
             <img
+              loading="lazy"
               alt="Weather Forecast App"
               src="./images/js-weather.png"
               class="project-card-img"
             />
-            <div class="figcaption-wrapper d-flex col jc-fe">
-              <figcaption class="project-card-desc">
+            <figcaption class="figcaption-wrapper d-flex col jc-fe">
+              <div class="project-card-desc">
                 <p class="text">
                   Using Open Weather map API, Google Places API and Geolocation
                   API, the app was built to forecast five-day weather details in
@@ -429,8 +425,10 @@
                       href="https://github.com/bolah2009/js-weather"
                       rel="noreferrer"
                       target="_blank"
-                      >Source Code</a
-                    >
+                      class="d-flex jc-sa ai-c"
+                      ><span> Source Code </span>
+                      <span class="icon-font github"></span>
+                    </a>
                   </li>
                   <li>
                     <a
@@ -441,18 +439,19 @@
                     >
                   </li>
                 </ul>
-              </figcaption>
-            </div>
+              </div>
+            </figcaption>
           </figure>
           <figure class="project-card d-flex col">
             <h3 class="project-title">Todo List App</h3>
             <img
+              loading="lazy"
               alt="Todo List App"
               src="./images/js-todo.png"
               class="project-card-img"
             />
-            <div class="figcaption-wrapper d-flex col jc-fe">
-              <figcaption class="project-card-desc">
+            <figcaption class="figcaption-wrapper d-flex col jc-fe">
+              <div class="project-card-desc">
                 <p class="text">
                   A todo app with
                   <abbr title="Create, read, update and delete">CRUD</abbr>
@@ -466,8 +465,10 @@
                       href="https://github.com/bolah2009/js-todo"
                       rel="noreferrer"
                       target="_blank"
-                      >Source Code</a
-                    >
+                      class="d-flex jc-sa ai-c"
+                      ><span> Source Code </span>
+                      <span class="icon-font github"></span>
+                    </a>
                   </li>
                   <li>
                     <a
@@ -478,18 +479,19 @@
                     >
                   </li>
                 </ul>
-              </figcaption>
-            </div>
+              </div>
+            </figcaption>
           </figure>
           <figure class="project-card d-flex col">
             <h3 class="project-title">Calculator App</h3>
             <img
+              loading="lazy"
               alt="Calculator App"
               src="./images/react-calculator.png"
               class="project-card-img"
             />
-            <div class="figcaption-wrapper d-flex col jc-fe">
-              <figcaption class="project-card-desc">
+            <figcaption class="figcaption-wrapper d-flex col jc-fe">
+              <div class="project-card-desc">
                 <p class="text">
                   A calculator app with basic binary operations built with react
                   and tested with Jest.
@@ -500,8 +502,10 @@
                       href="https://github.com/bolah2009/react-calculator"
                       rel="noreferrer"
                       target="_blank"
-                      >Source Code</a
-                    >
+                      class="d-flex jc-sa ai-c"
+                      ><span> Source Code </span>
+                      <span class="icon-font github"></span>
+                    </a>
                   </li>
                   <li>
                     <a
@@ -512,8 +516,8 @@
                     >
                   </li>
                 </ul>
-              </figcaption>
-            </div>
+              </div>
+            </figcaption>
           </figure>
         </div>
       </section>
@@ -540,23 +544,23 @@
 
               <div class="d-flex wrap jc-sb">
                 <div class="name ">
+                  <label class="label" for="form-name">Full name</label>
                   <input
-                    class="input"
                     type="text"
-                    class="form-control"
+                    class="input form-control"
                     id="form-name"
                     name="name"
                     placeholder="Full name"
-                    min="1"
+                    minlength="1"
                     required
                   />
                 </div>
 
                 <div class="email">
+                  <label class="label" for="form-email">Email address</label>
                   <input
-                    class="input"
                     type="email"
-                    class="form-control"
+                    class="input form-control"
                     id="form-email"
                     name="_replyto"
                     placeholder="Email address"
@@ -566,23 +570,24 @@
               </div>
 
               <div class="message d-flex col">
+                <label class="label" for="form-subject">Subject</label>
                 <input
-                  class="input"
                   type="text"
-                  class="form-control"
+                  class="input form-control"
                   id="form-subject"
                   name="subject"
                   placeholder="Subject"
-                  min="5"
+                  minlength="5"
                   required
                 />
+                <label class="label" for="form-message">Message</label>
                 <textarea
                   class="input"
                   rows="6"
                   id="form-message"
                   name="message"
                   placeholder="Your message here ..."
-                  min="5"
+                  minlength="5"
                   required
                 ></textarea>
               </div>

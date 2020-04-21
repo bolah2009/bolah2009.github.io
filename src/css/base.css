@@ -73,9 +73,18 @@ section > h2 {
   text-align: center;
 }
 
+.label {
+  width: 0;
+  height: 0;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+}
+
 .button {
   cursor: pointer;
-  background: #32ce32;
+  background: #026e02;
   color: #f9f9f9;
   padding: 8px;
+  border-radius: 4px;
 }

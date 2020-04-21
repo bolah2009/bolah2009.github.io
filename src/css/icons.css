@@ -44,6 +44,11 @@
   color: #555;
 }
 
+.links .github {
+  font-size: initial;
+  padding-left: 8px;
+}
+
 .linkedin {
   font-size: 25px;
 }
