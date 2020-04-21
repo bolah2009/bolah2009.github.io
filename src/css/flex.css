@@ -14,24 +14,24 @@
   flex-direction: column;
 }
 
-.row {
-  flex-direction: row;
+.jc-sb {
+  justify-content: space-between;
 }
 
 .jc-sa {
   justify-content: space-around;
 }
 
-.jc-sb {
-  justify-content: space-between;
+.jc-c {
+  justify-content: center;
+}
+
+.jc-fe {
+  justify-content: flex-end;
 }
 
 .ai-c {
   align-items: center;
-}
-
-.js-fe {
-  justify-self: end;
 }
 
 .wrap {
@@ -53,7 +53,7 @@
   .col-md {
     flex-direction: column;
   }
-  
+
   .row-md {
     flex-direction: row;
   }

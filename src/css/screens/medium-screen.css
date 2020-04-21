@@ -6,3 +6,36 @@
   border-radius: 4px;
   padding: 8px;
 }
+
+.home-title {
+  font-size: 400%;
+}
+
+.sub-title {
+  font-size: 200%;
+}
+
+.about-sub-section {
+  width: 50%;
+}
+
+.project-card {
+  width: 31%;
+}
+
+.figcaption-wrapper {
+  transform: translateY(100%);
+}
+
+.project-card:hover .figcaption-wrapper {
+  animation: 0.6s animate;
+  transform: translateY(0%);
+}
+
+.contact {
+  width: 60%;
+}
+
+.footer-list-item {
+  width: 50%;
+}

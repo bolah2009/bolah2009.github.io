@@ -36,16 +36,20 @@ a:hover {
 }
 
 h1 {
-  line-height: inherit;
-  text-transform: capitalize;
   color: #070707;
   text-align: center;
-  margin: 16px 0;
   font-size: 200%;
+  font-weight: normal;
 }
 
 h2 {
-  font-size: 1.2em;
+  text-transform: capitalize;
+  font-size: 150%;
+  margin-bottom: 12px;
+}
+
+p {
+  line-height: 32px;
 }
 
 li {
@@ -59,6 +63,14 @@ html {
 img {
   width: 100%;
   vertical-align: middle;
+}
+
+main > section {
+  padding: 56px 16px 0 16px;
+}
+
+section > h2 {
+  text-align: center;
 }
 
 .button {

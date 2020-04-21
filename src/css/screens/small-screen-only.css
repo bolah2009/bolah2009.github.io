@@ -1,0 +1,56 @@
+.hide {
+  display: none;
+}
+
+.figcaption-wrapper {
+  animation: 2s animate;
+}
+
+.edx .path_1 {
+  fill: #49a0dd;
+}
+
+.edx .path_2 {
+  fill: #2c67aa;
+}
+
+.edx .path_3 {
+  fill: #731b2b;
+}
+
+.edx .path_4 {
+  fill: #868484;
+}
+
+.edx .path_5 {
+  fill: #cf1f65;
+}
+
+.twitter {
+  color: #1da1f2;
+}
+
+.github {
+  color: #555;
+}
+
+.linkedin {
+  color: #0077b5;
+}
+
+.gitlab .path_1 {
+  fill: #e24329;
+}
+
+.gitlab .path_2 {
+  fill: #fc6d26;
+}
+
+.gitlab .path_3 {
+  fill: #fca326;
+}
+
+.acclaim {
+  width: 30px;
+  transform: rotate(0deg);
+}
