@@ -50,6 +50,7 @@
   .d-none-md {
     display: none;
   }
+
   .col-md {
     flex-direction: column;
   }
