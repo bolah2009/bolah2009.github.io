@@ -110,7 +110,7 @@
 }
 
 .project-card-img {
-  height: 90%;
+  height: 230px;
 }
 
 .project-card:hover .project-card-img {
@@ -118,7 +118,7 @@
 }
 
 .project-title {
-  height: 10%;
+  height: 26px;
   padding: 4px;
 }
 
