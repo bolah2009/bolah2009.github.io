@@ -16,15 +16,23 @@
 }
 
 .about-sub-section {
-  width: 50%;
+  width: 70%;
+}
+
+.about-sub-section > p {
+  width: 80%;
+}
+
+.skill {
+  width: 14%;
 }
 
 .project-card {
-  width: 31%;
+  height: 256px;
 }
 
 .figcaption-wrapper {
-  transform: translateY(100%);
+  transform: translateY(200%);
 }
 
 .project-card:hover .figcaption-wrapper {

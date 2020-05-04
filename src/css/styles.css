@@ -8,4 +8,4 @@
 @import 'screens/small-screen.css' screen and (min-width: 576px);
 @import 'screens/small-screen-only.css' screen and (max-width: 780px);
 @import 'screens/medium-screen.css' screen and (min-width: 780px);
-@import 'screens/large-screen.css' screen and (min-width: 1200px);
+@import 'screens/large-screen.css' screen and (min-width: 1020px);
