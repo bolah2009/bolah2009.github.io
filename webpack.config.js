@@ -1,15 +1,16 @@
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+const { CleanWebpackPlugin } = require('clean-webpack-plugin');
 const FixStyleOnlyEntriesPlugin = require('webpack-fix-style-only-entries');
 const OptimizeCSSAssetsPlugin = require('optimize-css-assets-webpack-plugin');
 const WorkboxPlugin = require('workbox-webpack-plugin');
 const CopyPlugin = require('copy-webpack-plugin');
+const PreloadWebpackPlugin = require('preload-webpack-plugin');
 
 module.exports = {
-  mode: 'development',
   entry: {
-    main: './src/index.js',
+    main: './src/js/index.js',
     styles: './src/css/styles.css',
   },
   output: {
@@ -30,7 +31,11 @@ module.exports = {
     ],
   },
   plugins: [
-    new HtmlWebpackPlugin({ template: './src/index.html' }),
+    new HtmlWebpackPlugin({
+      template: './src/index.html',
+      filename: './index.html',
+    }),
+    new PreloadWebpackPlugin(),
     new MiniCssExtractPlugin({ filename: '[name].css' }),
     new FixStyleOnlyEntriesPlugin(),
     new OptimizeCSSAssetsPlugin({}),
@@ -39,5 +44,11 @@ module.exports = {
       skipWaiting: true,
     }),
     new CopyPlugin([{ from: './src/assets', to: '.' }]),
+    new CleanWebpackPlugin({
+      dry: true,
+      verbose: true,
+      cleanStaleWebpackAssets: true,
+      protectWebpackAssets: false,
+    }),
   ],
 };
