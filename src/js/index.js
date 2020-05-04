@@ -1,3 +1,5 @@
+import handleFormSubmit from './handleFormSubmit';
+
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
@@ -91,3 +93,5 @@ document.addEventListener('scroll', () => {
     return sectionIsInView;
   });
 });
+
+handleFormSubmit();
