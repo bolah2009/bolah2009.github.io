@@ -140,8 +140,8 @@
           I am a Full Stack Web Developer.
         </p>
       </section>
-      <section class="main-section d-flex jc-c about" id="about">
-        <div class="about-sub-section d-flex col">
+      <section class="main-section d-flex jc-c ai-c about" id="about">
+        <div class="about-sub-section d-flex ai-c col">
           <h2>about me</h2>
           <p>
             I'm a full stack web developer and enthusiastic open source
@@ -704,88 +704,86 @@
           </figure>
         </div>
       </section>
-      <section class="main-section contact" id="contact">
-        <h2>contact</h2>
-        <div class="container">
-          <div class="form-section">
-            <!-- CONTACT FORM -->
-            <form
-              class="form d-flex col wrap"
-              action="https://formspree.io/xeqlaplr"
-              method="POST"
-              id="form"
-            >
-              <!-- IF FORM IS VALID -->
-              <h6 class="form-success d-none">
-                Your message has been sent successfully. Thank You!
-              </h6>
+      <section class="main-section contact d-flex col ai-c" id="contact">
+        <div class="contact-wrapper d-flex col ai-c">
+          <h2>contact</h2>
+          <div class="form-container">
+            <div class="form-section">
+              <!-- CONTACT FORM -->
+              <form class="form d-flex col wrap" action="#" id="form">
+                <!-- IF FORM IS VALID -->
+                <h6 class="form-success d-none">
+                  Your message has been sent successfully. Thank You!
+                </h6>
 
-              <!-- IF FORM IS NOT VALID -->
-              <h6 class="form-failure d-none">
-                'Oops! There was a problem submitting the form, please try again
-                later.'
-              </h6>
+                <!-- IF FORM IS NOT VALID -->
+                <h6 class="form-failure d-none">
+                  Oops! There was a problem submitting the form, please try
+                  again later.
+                </h6>
 
-              <div class="d-flex wrap jc-sb">
-                <div class="name ">
-                  <label class="label" for="form-name">Full name</label>
+                <div class="d-flex wrap jc-sb">
+                  <div class="name ">
+                    <label class="label" for="form-name">Full name</label>
+                    <input
+                      type="text"
+                      class="input"
+                      id="form-name"
+                      name="name"
+                      placeholder="Full name"
+                      minlength="1"
+                      required
+                    />
+                  </div>
+
+                  <div class="email">
+                    <label class="label" for="form-email">Email address</label>
+                    <input
+                      type="email"
+                      class="input"
+                      id="form-email"
+                      name="_replyto"
+                      placeholder="Email address"
+                      required
+                    />
+                  </div>
+                </div>
+                <input type="hidden" class="h-input" />
+                <input type="text" value="" class="h-input no-show" />
+                <div class="message d-flex col">
+                  <label class="label" for="form-subject">Subject</label>
                   <input
                     type="text"
                     class="input"
-                    id="form-name"
-                    name="name"
-                    placeholder="Full name"
-                    minlength="1"
+                    id="form-subject"
+                    name="subject"
+                    placeholder="Subject"
+                    minlength="2"
                     required
                   />
-                </div>
-
-                <div class="email">
-                  <label class="label" for="form-email">Email address</label>
-                  <input
-                    type="email"
+                  <label class="label" for="form-message">Message</label>
+                  <textarea
                     class="input"
-                    id="form-email"
-                    name="_replyto"
-                    placeholder="Email address"
+                    rows="6"
+                    id="form-message"
+                    name="message"
+                    placeholder="Your message here ..."
+                    minlength="5"
                     required
-                  />
+                  ></textarea>
                 </div>
-              </div>
 
-              <div class="message d-flex col">
-                <label class="label" for="form-subject">Subject</label>
-                <input
-                  type="text"
-                  class="input"
-                  id="form-subject"
-                  name="subject"
-                  placeholder="Subject"
-                  minlength="2"
-                  required
-                />
-                <label class="label" for="form-message">Message</label>
-                <textarea
-                  class="input"
-                  rows="6"
-                  id="form-message"
-                  name="message"
-                  placeholder="Your message here ..."
-                  minlength="5"
-                  required
-                ></textarea>
-              </div>
-
-              <button
-                class="form-submit"
-                type="submit"
-                id="form-submit"
-                name="submit"
-                value="submit"
-              >
-                Send Message
-              </button>
-            </form>
+                <button
+                  class="form-submit"
+                  type="submit"
+                  id="form-submit"
+                  name="submit"
+                  value="submit"
+                >
+                  Send Message
+                </button>
+              </form>
+            </div>
           </div>
         </div>
       </section>
@@ -864,7 +862,7 @@
             </li>
           </ul>
         </li>
-        <li class="footer-list-item jc-c d-flex col">
+        <li class="footer-list-item jc-c ai-c d-flex col">
           <p>
             Built with HTML-CSS-JS, hosted on
             <a
