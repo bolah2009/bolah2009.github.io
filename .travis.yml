@@ -9,6 +9,7 @@ script:
   - yarn format:check
   - yarn lint:check
   - yarn build
+  - npx html-validator-cli --verbose --file src/index.html
 deploy:
   provider: pages
   skip_cleanup: true
