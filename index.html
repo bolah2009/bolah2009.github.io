@@ -1,24 +1,40 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="utf-8" />
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+      name="description"
+      content="Bola Ahmed Buari - Software Engineer Portfolio"
     />
-    <meta
-      name="Description"
-      content="A personal portfolio page of Bola Ahmed Buari"
-    />
-    <meta property="og:site_name" content="https://bolabuari.com" />
-    <meta property="og:title" content="Bola Ahmed Buari Personal Portfolio" />
+    <meta name="author" content="Bola Ahmed Buari" />
+
+    <!-- Page Title -->
+    <title>Bola Ahmed Buari - Software Engineer</title>
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:title" content="Bola Ahmed Buari - Software Engineer" />
     <meta
       property="og:description"
-      content="A personal portfolio page of Bola Ahmed Buari"
+      content="Experienced Software Engineer specializing in web development, programming, and problem-solving."
     />
-    <meta property="og:image" content="/icons-192.png" />
+    <meta property="og:site_name" content="https://bolabuari.com" />
+    <meta
+      property="og:image"
+      content="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1691567079/portfolio/portfolio-opengraph-image.png"
+    />
     <meta property="og:url" content="https://bolabuari.com" />
-    <meta property="og:type" content="blog" />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content="Bola Ahmed Buari - Software Engineer" />
+    <meta
+      name="twitter:description"
+      content="Experienced Software Engineer specializing in web development, programming, and problem-solving."
+    />
+    <meta name="twitter:image" content="https://bolabuari.com" />
+
     <meta name="msvalidate.01" content="B9F62266FAA30B05C1E8AA29AFD3BC59" />
     <link rel="apple-touch-icon" sizes="57x57" href="./apple-icon-57x57.png" />
     <link rel="apple-touch-icon" sizes="60x60" href="./apple-icon-60x60.png" />
@@ -79,13 +95,31 @@
     <meta name="theme-color" content="#ffffff" />
 
     <title>Bola Ahmed Buari</title>
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- JSON-LD Structured Data -->
+    <script type="application/ld+json">
+      {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        "name": "Bola Ahmed Buari",
+        "jobTitle": "Software Engineer",
+        "url": "https://bolabuari.com",
+        "image": "https://res.cloudinary.com/bolaah/image/upload/v1691571839/portfolio/1.jpg",
+        "description": "Experienced Software Engineer specializing in web development, programming, and problem-solving.",
+        "sameAs": [
+          "https://www.linkedin.com/in/bolah2009",
+          "https://github.com/bolah2009",
+          "https://twitter.com/bolah2009"
+        ]
+      }
+    </script>
   </head>
   <body>
     <nav class="nav d-flex jc-sb ai-c wrap">
       <a href="#home" class="brand-logo-btn" data-id="home">
         <img
           class="brand-logo"
-          src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_32,w_32/v1587563544/portfolio/icons-192.png"
+          src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/c_scale,h_32,w_32/v1587563544/portfolio/icons-192.png"
           alt="brand logo"
         />
       </a>
@@ -136,9 +170,7 @@
     <main class="main">
       <section class="main-section d-flex col jc-c ai-c home" id="home">
         <h1 class="home-title">Hi, I'm Bola Ahmed Buari.</h1>
-        <p class="sub-title">
-          I am a Full Stack Web Developer.
-        </p>
+        <p class="sub-title">I am a Full Stack Web Developer.</p>
       </section>
       <section class="main-section d-flex jc-c ai-c about" id="about">
         <div class="about-sub-section d-flex ai-c col">
@@ -168,8 +200,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/html-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/html-icon.svg"
                     alt="HTML Icon"
+                    width="36"
                   />
                 </div>
                 <h4>HTML</h4>
@@ -177,8 +210,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/css-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/css-icon.svg"
                     alt="CSS Icon"
+                    width="36"
                   />
                 </div>
                 <h4>CSS</h4>
@@ -186,8 +220,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/ruby-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/ruby-icon.svg"
                     alt="Ruby Icon"
+                    width="36"
                   />
                 </div>
                 <h4>Ruby</h4>
@@ -195,8 +230,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/python-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/python-icon.svg"
                     alt="Python Icon"
+                    width="36"
                   />
                 </div>
                 <h4>Python</h4>
@@ -204,8 +240,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/sass-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/sass-icon.svg"
                     alt="SASS Icon"
+                    width="36"
                   />
                 </div>
                 <h4>SASS</h4>
@@ -213,8 +250,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/react-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/react-icon.svg"
                     alt="React Icon"
+                    width="36"
                   />
                 </div>
                 <h4>React</h4>
@@ -222,8 +260,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/redux-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/redux-icon.svg"
                     alt="Redux Icon"
+                    width="36"
                   />
                 </div>
                 <h4>Redux</h4>
@@ -231,8 +270,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/rails-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/rails-icon.svg"
                     alt="Rails Icon"
+                    width="36"
                   />
                 </div>
                 <h4>Rails</h4>
@@ -240,8 +280,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/postgresql-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/postgresql-icon.svg"
                     alt="PostgreSQL Icon"
+                    width="36"
                   />
                 </div>
                 <h4>PostgreSQL</h4>
@@ -249,8 +290,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/node-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/node-icon.svg"
                     alt="Node Icon"
+                    width="36"
                   />
                 </div>
                 <h4>Node</h4>
@@ -258,8 +300,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/git-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/git-icon.svg"
                     alt="Git Icon"
+                    width="36"
                   />
                 </div>
                 <h4>Git</h4>
@@ -267,8 +310,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/npm-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/npm-icon.svg"
                     alt="NPM Icon"
+                    width="36"
                   />
                 </div>
                 <h4>NPM</h4>
@@ -276,8 +320,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/yarn-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/yarn-icon.svg"
                     alt="Yarn Icon"
+                    width="36"
                   />
                 </div>
                 <h4>Yarn</h4>
@@ -285,8 +330,9 @@
               <li class="skill d-flex col ai-c">
                 <div class="skill-icon">
                   <img
-                    src="https://res.cloudinary.com/bolaah/image/upload/v1588596803/portfolio/webpack-icon.svg"
+                    src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/v1588596803/portfolio/webpack-icon.svg"
                     alt="Webpack Icon"
+                    width="36"
                   />
                 </div>
                 <h4>Webpack</h4>
@@ -372,12 +418,12 @@
               >
                 <svg class="edx" viewBox="0 0 295 140" width="30" height="25">
                   <defs>
-                    <clipPath id="a">
+                    <clippath id="a">
                       <path d="M321 169l234 2-1 150-234-2 1-150z" />
-                    </clipPath>
-                    <clipPath id="b">
+                    </clippath>
+                    <clippath id="b">
                       <path d="M0 0h612v792H0V0z" />
-                    </clipPath>
+                    </clippath>
                   </defs>
                   <g
                     clip-path="url(#a)"
@@ -419,7 +465,7 @@
                 <img
                   loading="lazy"
                   alt="Acclaim"
-                  src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_30,w_30/v1587563544/portfolio/acclaim_badge.png"
+                  src="https://res.cloudinary.com/bolaah/image/upload/c_scale,w_36/c_scale,h_30,w_30/v1587563544/portfolio/acclaim_badge.png"
                   class="acclaim"
                 />
               </a>
@@ -435,8 +481,9 @@
             <img
               loading="lazy"
               alt="Tic-Tac-Toe Game"
-              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230,w_411/v1587563544/portfolio/js-ttt.png"
+              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230/c_scale,h_230,w_411/v1587563544/portfolio/js-ttt.png"
               class="project-card-img"
+              height="230"
             />
             <figcaption class="figcaption-wrapper d-flex col jc-fe">
               <div class="project-card-desc">
@@ -481,8 +528,9 @@
             <img
               loading="lazy"
               alt="Restaurant Landing page"
-              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230,w_411/v1587563544/portfolio/restaurant-page.png"
+              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230/c_scale,h_230,w_411/v1587563544/portfolio/restaurant-page.png"
               class="project-card-img"
+              height="230"
             />
             <figcaption class="figcaption-wrapper d-flex col jc-fe">
               <div class="project-card-desc">
@@ -525,8 +573,9 @@
             <img
               loading="lazy"
               alt="Weather Forecast App"
-              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230,w_411/v1587563544/portfolio/js-weather.png"
+              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230/c_scale,h_230,w_411/v1587563544/portfolio/js-weather.png"
               class="project-card-img"
+              height="230"
             />
             <figcaption class="figcaption-wrapper d-flex col jc-fe">
               <div class="project-card-desc">
@@ -570,8 +619,9 @@
             <img
               loading="lazy"
               alt="Todo List App"
-              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230,w_411/v1587563544/portfolio/js-todo.png"
+              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230/c_scale,h_230,w_411/v1587563544/portfolio/js-todo.png"
               class="project-card-img"
+              height="230"
             />
             <figcaption class="figcaption-wrapper d-flex col jc-fe">
               <div class="project-card-desc">
@@ -617,8 +667,9 @@
             <img
               loading="lazy"
               alt="Calculator App"
-              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230,w_411/v1587563544/portfolio/react-calculator.png"
+              src="https://res.cloudinary.com/bolaah/image/upload/c_scale,h_230/c_scale,h_230,w_411/v1587563544/portfolio/react-calculator.png"
               class="project-card-img"
+              height="230"
             />
             <figcaption class="figcaption-wrapper d-flex col jc-fe">
               <div class="project-card-desc">
@@ -677,7 +728,7 @@
                 </h6>
 
                 <div class="d-flex wrap jc-sb">
-                  <div class="name ">
+                  <div class="name">
                     <label class="label" for="form-name">Full name</label>
                     <input
                       type="text"
@@ -703,7 +754,12 @@
                   </div>
                 </div>
                 <input type="hidden" class="h-input" />
-                <input type="text" value="" class="h-input no-show" />
+                <input
+                  type="text"
+                  name="no-show"
+                  value=""
+                  class="h-input no-show"
+                />
                 <div class="message d-flex col">
                   <label class="label" for="form-subject">Subject</label>
                   <input
@@ -846,14 +902,14 @@
       src="https://www.googletagmanager.com/gtag/js?id=UA-125431894-1"
     ></script>
     <script>
-      window.dataLayer = window.dataLayer || [];
+      window.dataLayer = window.dataLayer || []
 
       function gtag() {
-        dataLayer.push(arguments);
+        dataLayer.push(arguments)
       }
-      gtag('js', new Date());
+      gtag('js', new Date())
 
-      gtag('config', 'UA-125431894-1');
+      gtag('config', 'UA-125431894-1')
     </script>
   </body>
 </html>

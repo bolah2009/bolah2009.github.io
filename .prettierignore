@@ -1,2 +1,13 @@
 # Ignore built files
 dist/*
+
+# Ignore artifacts:
+build
+coverage
+
+# Ignore accessibility report
+accessibility_report.md
+accessibility_report.html
+
+# cache
+.cache

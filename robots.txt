@@ -1,0 +1,8 @@
+# *
+User-agent: *
+
+# Host
+Host: https://bolabuari.com
+
+# Sitemaps
+Sitemap: https://bolabuari.com/sitemap.xml

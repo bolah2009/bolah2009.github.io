@@ -17,7 +17,6 @@ module.exports = {
   rules: {
     'no-shadow': 'error',
     'no-param-reassign': ['error', { props: false }],
-    'arrow-parens': ['error', 'as-needed'],
     'prettier/prettier': 'error',
   },
-};
+}
