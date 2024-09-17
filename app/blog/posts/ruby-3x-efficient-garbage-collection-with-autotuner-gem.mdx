@@ -1,0 +1,102 @@
+---
+title: 'Ruby 3.x: A Recipe for Efficient Garbage Collection with Autotuner Gem'
+summary: 'Learn how to optimize Ruby 3.x applications with the Autotuner gem, fine-tuning garbage collection for reduced memory usage and improved performance.'
+publishedAt: '2024-08-23'
+---
+
+## **Ruby 3.x: A Recipe for Efficient Garbage Collection with Autotuner Gem**
+
+Efficient memory management is critical for the performance of Ruby applications, especially high-traffic ones. In Ruby 3.x, the Garbage Collector (GC) plays a crucial role in managing memory usage, but tuning the GC for optimal performance can be tricky. That’s where the **Autotuner gem** comes in, providing intelligent suggestions based on your app's traffic patterns and memory usage.
+
+In this guide, I’ll walk you through using the **Autotuner gem** to fine-tune the GC in Ruby 3.x, highlighting the steps to integrate it into your project and the real improvements you can expect.
+
+---
+
+### **Why Garbage Collection Tuning?**
+
+In our high-traffic Rails applications, we encountered persistent **out-of-memory (OOM) errors**, despite increasing memory limits and setting up autoscaling. These OOM errors were not only disruptive but also costly, as they triggered unnecessary autoscaling and increased resource consumption.
+
+It was clear that we needed a more efficient way to manage memory usage, especially in our containers. **GC tuning** became a critical part of our strategy to reduce memory usage while maintaining performance.
+
+---
+
+### **How the Autotuner Gem Works**
+
+The **Autotuner gem** integrates as middleware in your Rails application and collects data from the GC between requests. It analyzes this data and provides intelligent suggestions to improve garbage collection performance, reducing memory consumption and optimizing bootup, warmup, and response times.
+
+As explained in the [Autotuner gem documentation](https://github.com/Shopify/autotuner), the gem provides its suggestions directly in your logs, which you can monitor through observability tools like **Datadog**. Once these suggestions are generated, you can decide which ones to apply based on your app's specific needs.
+
+For a deeper dive into how Autotuner works and its benefits, you can also check out this extensive article by Peter Zhu, the creator of Autotuner, on ["How to Speed Up Your Rails App"](https://railsatscale.com/2024-04-24-autotuner-how-to-speed-up-your-rails-app/). This article explores the gem in greater detail, including its design and practical use cases for improving Ruby app performance.
+
+---
+
+### **Integrating the Autotuner Gem into Your Rails App**
+
+Here’s how you can easily integrate the Autotuner gem into a Ruby 3.x project for efficient GC tuning:
+
+1. **Install the Gem**:
+   Add the Autotuner gem to your Gemfile and run `bundle install`.
+
+2. **Setup the `config.ru` file**
+   Open the `config.ru` file in your Rails app and add the following line immediately above `run(Rails.application)`:
+
+   ```rb
+   use(Autotuner::RackPlugin)
+   ```
+
+3. **Setup the Initializer**:
+   Create an initializer file at `config/initializers/autotuner.rb` to enable Autotuner and configure how reports are logged. For example:
+
+   ```rb
+   Autotuner.enabled = true
+
+   Autotuner.reporter = proc do |report|
+     Rails.logger.info("AutotunerReporter: #{report}")
+   end
+
+   Autotuner.metrics_reporter = proc do |metrics|
+     metrics.each do |key, val|
+       StatsD.gauge(key, val, tags: %w[autotuner api])
+     end
+   end
+   ```
+
+   This setup enables Autotuner and logs reports via your Rails logger. Metrics are also sent to StatsD for further analysis.
+
+---
+
+### **Measuring Success: What to Track**
+
+Once Autotuner generates GC tuning suggestions, you’ll want to measure the impact of applying those suggestions. The key metrics to monitor include:
+
+- **Memory Usage Trends**: Track overall memory usage before and after applying the suggestions to see if there's a reduction.
+- **CPU Usage**: Ensure that CPU usage remains stable or improves after the tuning.
+- **Latency**: Monitor request latency to avoid any negative trade-offs between memory optimization and response times.
+
+By carefully tracking these metrics, you can determine whether the tuning suggestions are benefiting your application or if further adjustments are needed.
+For more metrics to track check out the autotuner gem documentation page.
+
+---
+
+### **GC Tuning in Action: Our Experience with Autotuner**
+
+After applying Autotuner’s suggestions, we noticed varying outcomes depending on our app’s specific traffic and usage patterns. Some suggestions, like those that trade memory for lower latency, didn’t suit our needs as we were focused on reducing memory consumption.
+
+However, one common and highly effective suggestion was to **run garbage collection compaction at boot time**. This reduces fragmentation inside the Ruby heap, leading to more efficient memory use. Here’s how we implemented it in our Puma configuration:
+
+```rb
+before_fork do
+  3.times { GC.start }
+  GC.compact
+end
+```
+
+This change significantly reduced memory usage in our forking web servers, improving performance without sacrificing latency. It was a simple yet powerful tweak that made a tangible difference in our application's memory management.
+
+---
+
+## **Conclusion**
+
+The Autotuner gem provides an invaluable tool for tuning garbage collection in Ruby 3.x, especially in high-traffic applications where memory management is critical. By integrating Autotuner, tracking key metrics, and applying carefully selected suggestions, you can optimize memory usage and improve overall application performance.
+There's an extensive article by https://railsatscale.com/2024-04-24-autotuner-how-to-speed-up-your-rails-app/
+If your Rails app is struggling with high memory usage or frequent OOM errors, consider using Autotuner to fine-tune your garbage collection and achieve better resource efficiency.

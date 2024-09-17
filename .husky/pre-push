@@ -12,4 +12,7 @@ fi
 
 echo -e ">> Finish checking branch name \n==="
 
+echo -e "Running build"
+yarn build
+
 exit 0
