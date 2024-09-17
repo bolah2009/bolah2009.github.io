@@ -1,5 +1,3 @@
-# [![Netlify Status](https://api.netlify.com/api/v1/badges/7beca3f9-728b-4d56-90dc-38443719b7c8/deploy-status)](https://app.netlify.com/sites/bolah-portfolio/deploys) &middot; [![Maintainability](https://api.codeclimate.com/v1/badges/7bcdf102bb895ac7a988/maintainability)](https://codeclimate.com/github/bolah2009/bolah2009.github.io/maintainability) [![Build Status](https://travis-ci.com/bolah2009/bolah2009.github.io.svg?branch=production)](https://travis-ci.com/bolah2009/bolah2009.github.io) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bolah2009/bolah2009.github.io/pulls)
-
 # Personal Portfolio Page
 
 > A personal portfolio page built with HTML, CSS and JavaScript
@@ -15,9 +13,9 @@
   - CSS Media query
   - CSS imports
 - JavaScript
-   - ES6 Modules
-   - DOM Manipulation
-   - Events
+  - ES6 Modules
+  - DOM Manipulation
+  - Events
 - Dev Tools
   - Webpack
   - Yarn
@@ -69,7 +67,7 @@ yarn format
 - Start server (Development mode)
 
 ```bash
-yarn start
+yarn dev
 ```
 
 - Start server (Production mode)
@@ -95,7 +93,7 @@ Give a ⭐️ if you like this project!
 
 ## 🙏🏾 Acknowledgments
 
-- Microverse Team 
+- Microverse Team
 
 ## 👨🏽‍💻 Author
 
