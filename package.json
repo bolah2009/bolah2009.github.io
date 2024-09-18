@@ -3,7 +3,7 @@
   "version": "2.0.0",
   "description": "Bola Personal Portfolio Page",
   "engines": {
-    "node": "18.x",
+    "node": "20.x",
     "npm": "please-use-yarn"
   },
   "dependencies": {
@@ -24,7 +24,7 @@
     "typescript": "5.3.3"
   },
   "devDependencies": {
-    "@commitlint/cli": "^18.2.0",
+    "@commitlint/cli": "^19.5.0",
     "@commitlint/config-conventional": "^19.5.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.12",
