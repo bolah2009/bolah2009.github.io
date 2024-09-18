@@ -1,27 +1,15 @@
 # Personal Portfolio Page
 
-> A personal portfolio page built with HTML, CSS and JavaScript
+> A personal portfolio page with blog, build with Next.js and Typescript. Includes:
 
-## Technologies Used
-
-- HTML
-  - HTML5 Semantic elements
-  - HTML Forms
-- CSS
-  - CSS Flexbox
-  - CSS Animations
-  - CSS Media query
-  - CSS imports
-- JavaScript
-  - ES6 Modules
-  - DOM Manipulation
-  - Events
-- Dev Tools
-  - Webpack
-  - Yarn
-- Linters
-  - Eslint
-  - StyleLint
+- MDX and Markdown support
+- Optimized for SEO (sitemap, robots, JSON-LD schema)
+- RSS Feed
+- Dynamic OG images
+- Syntax highlighting
+- Tailwind v4
+- Vercel Speed Insights / Web Analytics
+- Geist font
 
 ## 🌐 [Live link](https://bolabuari.com/)
 
@@ -70,17 +58,6 @@ yarn format
 yarn dev
 ```
 
-- Start server (Production mode)
-
-```bash
-yarn build
-```
-
-## 🧾 TODO
-
-- Improve UI/UX
-- Add smooth scroll feature
-
 ## 🤝🏾 Contributing
 
 Contributions, issues and feature requests are welcome!
@@ -90,10 +67,6 @@ Feel free to check the [issues page](../../issues).
 ## ⭐️ Show your support
 
 Give a ⭐️ if you like this project!
-
-## 🙏🏾 Acknowledgments
-
-- Microverse Team
 
 ## 👨🏽‍💻 Author
 

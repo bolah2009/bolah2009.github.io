@@ -10,7 +10,9 @@ export default function Page() {
       <p className="mb-4">
         {`I'm a Senior Ruby Engineer with expertise in full-stack development, 
         scalable software solutions, and performance optimization. 
-        With over 5 years of experience, I specialize in Ruby on Rails, 
+        With over ${
+          new Date().getFullYear() - 2016
+        } years of professional experience, I specialize in Ruby on Rails, 
         React, and cloud infrastructure to deliver high-quality, efficient 
         applications.`}
       </p>
