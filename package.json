@@ -30,7 +30,8 @@
     "eslint-config-next": "14.2.12",
     "husky": "^8.0.0",
     "lint-staged": "^15.0.2",
-    "prettier": "3.0.3"
+    "prettier": "3.0.3",
+    "turbo": "^2.1.2"
   },
   "scripts": {
     "format": "prettier --write . --cache --cache-location node_modules/.cache/.prettiercache --ignore-path .gitignore",
@@ -66,5 +67,6 @@
     "*.{js,ts,tsx,jsx,json,yml,md}": "prettier  --write --ignore-path .gitignore",
     "*.{js,ts,tsx,jsx}": "eslint"
   },
-  "homepage": "https://github.com/bolah2009/bolah2009.github.io#readme"
+  "homepage": "https://github.com/bolah2009/bolah2009.github.io#readme",
+  "packageManager": "yarn@1.22.22"
 }
