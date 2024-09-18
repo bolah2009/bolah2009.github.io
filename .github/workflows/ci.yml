@@ -24,7 +24,6 @@ jobs:
           yarn build
 
   lint:
-    needs: build
     runs-on: ubuntu-22.04
     name: Linter Checks
     steps:
@@ -48,7 +47,6 @@ jobs:
           yarn format:check
 
   scan:
-    needs: build
     runs-on: ubuntu-22.04
     name: Run Security Audit
     steps:
