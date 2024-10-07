@@ -22,6 +22,7 @@ updates:
           - '*'
         update-types:
           - 'minor'
+          - 'patch'
       # This is used to group updates instead of opening multiple PRs for security updates
       security-updates:
         applies-to: security-updates
@@ -29,6 +30,7 @@ updates:
           - '*'
         update-types:
           - 'minor'
+          - 'patch'
 
   - package-ecosystem: 'github-actions'
     directory: '/'
@@ -47,6 +49,7 @@ updates:
           - '*'
         update-types:
           - 'minor'
+          - 'patch'
       # This is used to group updates instead of opening multiple PRs for security updates
       security-updates:
         applies-to: security-updates
@@ -54,3 +57,4 @@ updates:
           - '*'
         update-types:
           - 'minor'
+          - 'patch'
