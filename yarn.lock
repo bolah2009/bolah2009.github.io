@@ -1586,7 +1586,7 @@ eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.1, eslint-visitor-keys@^3.4
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz#0cd72fe8550e3c2eae156a96a4dddcd1c8ac5800"
   integrity sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==
 
-eslint@^8.x:
+eslint@^8.57.1:
   version "8.57.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.57.1.tgz#7df109654aba7e3bbe5c8eae533c5e461d3c6ca9"
   integrity sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==
@@ -4012,10 +4012,10 @@ styled-jsx@5.1.1:
   dependencies:
     client-only "0.0.1"
 
-sugar-high@^0.7.0:
-  version "0.7.0"
-  resolved "https://registry.yarnpkg.com/sugar-high/-/sugar-high-0.7.0.tgz#364e5a88761e26ad2e716eda07140deb0f4257ef"
-  integrity sha512-YLiKnecbREzIW8pML5X0l7osEYBgTrQI29BB7wjIoDOpZ6F7dAkbY7PoI5BNBN7hWio+3pn6+emaNLPkJbmB8A==
+sugar-high@^0.7.1:
+  version "0.7.1"
+  resolved "https://registry.yarnpkg.com/sugar-high/-/sugar-high-0.7.1.tgz#7f94135ebf758190e186092eeeb94fa3ac3796d4"
+  integrity sha512-hwEXr/gtUvi+jfgjgxbuiRD5EX5C1/eQrW/RoZ0Dm+993p46ECB5HBjMfc20FEbsXKQHtueHtYoe2ofb6V+83A==
 
 supports-color@^5.3.0:
   version "5.5.0"
