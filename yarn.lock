@@ -1586,7 +1586,7 @@ eslint-visitor-keys@^3.3.0, eslint-visitor-keys@^3.4.1, eslint-visitor-keys@^3.4
   resolved "https://registry.yarnpkg.com/eslint-visitor-keys/-/eslint-visitor-keys-3.4.3.tgz#0cd72fe8550e3c2eae156a96a4dddcd1c8ac5800"
   integrity sha512-wpc+LXeiyiisxPlEkUzU6svyS1frIO3Mgxj1fdy7Pm8Ygzguax2N3Fa/D/ag1WqbOprdI+uY6wMUl8/a2G+iag==
 
-eslint@^8.x:
+eslint@^8.57.1:
   version "8.57.1"
   resolved "https://registry.yarnpkg.com/eslint/-/eslint-8.57.1.tgz#7df109654aba7e3bbe5c8eae533c5e461d3c6ca9"
   integrity sha512-ypowyDxpVSYpkXr9WPv2PAZCtNip1Mv5KTW0SCurXv/9iOpcrH9PaqUElksqEB6pChqHGDRCFTyrZlGhnLNGiA==
@@ -4040,6 +4040,11 @@ tailwindcss@4.0.0-alpha.13:
   version "4.0.0-alpha.13"
   resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-4.0.0-alpha.13.tgz#c03b0c89992ddcdc95829c4408674870ad14cb64"
   integrity sha512-YbLm8I10/bsGr7zrUNxn4Soj9Lc71anTWu/ulgry64rbBU4m0vov539+caeifAiKhsef2NUCW1twaqH3NfJd2Q==
+
+tailwindcss@4.0.0-alpha.26:
+  version "4.0.0-alpha.26"
+  resolved "https://registry.yarnpkg.com/tailwindcss/-/tailwindcss-4.0.0-alpha.26.tgz#c8949fa9a7890e484281593aa765d9d514cb3a1e"
+  integrity sha512-jHLs/18tHTLWkuaWMrTFdeF8qM0ZqCtZHo/YvtZOuhZGA9wW1TVpIvPkAHECXRSp4JiTKBkCzUPdv505kMkgow==
 
 tapable@^2.2.0:
   version "2.2.1"
