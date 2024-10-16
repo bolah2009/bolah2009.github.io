@@ -1,12 +1,26 @@
+import { getBlogPosts } from 'app/blog/utils'
 import { ImageResponse } from 'next/og'
 
-export function GET() {
+export async function generateStaticParams() {
+  let posts = getBlogPosts()
+
+  return posts.map((post) => ({
+    title: [encodeURIComponent(post.metadata.title)],
+  }))
+}
+
+export function GET(
+  _request: Request,
+  {
+    params: { title = ['Bola Ahmed Buari Portfolio'] },
+  }: { params: { title: string[] } }
+) {
   return new ImageResponse(
     (
       <div tw="flex flex-col w-full h-full items-center justify-center bg-white">
         <div tw="flex flex-col md:flex-row w-full py-12 px-4 md:items-center justify-between p-8">
           <h2 tw="flex flex-col text-4xl font-bold tracking-tight text-left">
-            Bola Ahmed Buari Portfolio
+            {title[0]}
           </h2>
         </div>
       </div>
