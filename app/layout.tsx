@@ -20,7 +20,7 @@ export const metadata: Metadata = {
     title: 'Bola Ahmed Buari - Senior Ruby Engineer',
     description:
       'Experienced in full-stack development and building scalable solutions with Ruby on Rails, React, and TypeScript.',
-    url: baseUrl,
+    url: '/og/index',
     siteName: 'Bola Ahmed Buari - Senior Ruby Engineer',
     locale: 'en_US',
     type: 'website',
