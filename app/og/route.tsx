@@ -1,14 +1,8 @@
 import { ImageResponse } from 'next/og'
 
 export function GET(request: Request) {
-  let title = 'Bola Ahmed Buari Portfolio'
-  // Fix for github pages deployment to allow static only pages.
-  try {
-    let url = new URL(request.url)
-    title = url.searchParams.get('title') || title
-  } catch (error) {
-    console.error(error)
-  }
+  let url = new URL(request.url)
+  let title = url.searchParams.get('title') || 'Bola Ahmed Buari Portfolio'
 
   return new ImageResponse(
     (
